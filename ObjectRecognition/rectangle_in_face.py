@@ -1,5 +1,6 @@
 #1.导入所需要的库
 import cv2    #导入OpenCV库
+import matplotlib
 import matplotlib.pyplot as plt    #导入matplotlib库
 import time    #导入时间库用于运行速度比较
 %matplotlib inline
@@ -8,7 +9,7 @@ def convertToRGB(img):
     return cv2.cvtColor(img, cv2.COLOR_BGR2RGB)    #OpenCV载入默认是BGR，matplotlib需要使用RGB
     
 #2.载入图片
-test1 = cv2.imread('data/test1.jpg')
+test1 = cv2.imread('ObjectRecognition/data/test1.jpg')
 gray_img = cv2.cvtColor(test1, cv2.COLOR_BGR2GRAY)    #转成灰度图像给face detector
 plt.imshow(gray_img, cmap='gray')    #用matplotlib的函数显示图片
 
