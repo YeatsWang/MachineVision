@@ -1,2 +1,3 @@
-# facedetection
-人脸识别算法学习：haar和lbp
+# 人脸检测
+人脸检测算法学习：haar和lbp
+自己学习用
